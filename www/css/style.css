@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Finger Paint', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+nav{
+    background-color: #FF4C4B;
+    padding: 1rem 2rem;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    font-size: 2rem;
+    font-family: 'Finger Paint', cursive;
+    font-weight: bold;
+    color: white;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,30vw);
+    grid-template-columns: repeat(3,30vw);
+    margin: 1rem;
+    position: relative;
+}
+.container div{
+    display: grid;
+    place-items: center;
+}
+
+.container div span{
+    font-size: 20vw;
+}
+
+.box{
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: #ffefef;
+}
+
+.gameInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.gameInfo h1{
+    font-family: 'Raleway';
+
+}
+
+.gameInfo p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.gameInfo i{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FF4C4B;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.imgbox{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    width: 0;
+    height: 5px;
+    background-color: #FF4C4B;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FF4C4B;
+    display: grid;
+    place-items: center;
+}
+
+section img{
+    width: 80%;
+    transform: translateY(5rem);
+}
+
+section button{
+    padding: 2rem 6rem;
+    border: none;
+    background-color: #FFCA28;
+    font-size: 4rem;
+    color: #FF4C4B;
+    border-radius: 2rem;
+    transform: translateY(3rem);
+    cursor: pointer;
+
+}
