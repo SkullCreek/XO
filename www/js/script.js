@@ -19,7 +19,7 @@ const checkWin = () => {
         [1, 4, 7, 0, 45, 90],
         [2, 5, 8, 30, 45, 90],
         [0, 4, 8 , 0, 45, 45],
-        [2, 4, 6],
+        [2, 4, 6, 0, 45, -45],
     ]
     wins.forEach(e => {
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText !== "")){
@@ -29,6 +29,7 @@ const checkWin = () => {
             music2.play();
             document.querySelector(".line").style.width = `90vw`;
             document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
+            // document.querySelector(".line").style.transform = `translate(0vw, 45vw) rotate(-45deg)`;
         }
     });
 }
